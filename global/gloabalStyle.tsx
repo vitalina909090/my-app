@@ -1,24 +1,57 @@
 import { StyleSheet } from "react-native";
 
+export const colors = {
+  cream: "#fdf6f5",
+  blush: "#f9edec",
+  dustyRose: "#f2d3d0",
+  rose: "#e87a96",
+  mauve: "#dca9b5",
+  plum: "#5a3532",
+  muted: "#8c6d6a",
+  petal: "#e8c4c0",
+};
+
 export const globalStyles = StyleSheet.create({
   container: {
     flex: 1,
-    padding: 20
+    backgroundColor: colors.cream,
   },
-  title:{
-    fontSize: 20,
-    color: "#297e3e"
+
+  title: {
+    fontSize: 28,
+    fontWeight: "800",
+    color: colors.plum,
   },
-  bold:{
-    fontWeight: "bold"
+
+  smallTitle: {
+    fontSize: 17,
+    fontWeight: "700",
+    color: colors.plum,
   },
-  link: {
-    color: "#145e26",
-    textDecorationLine: "none",
-    padding: 10,
-    borderWidth: 1,
-    borderRadius: 20,
-    borderColor: "#174422",
-    backgroundColor: "#67d182"
-  }
+
+  labelText: {
+    fontSize: 11,
+    fontWeight: "700",
+    color: colors.rose,
+    letterSpacing: 2.5,
+    textTransform: "uppercase",
+  },
+
+  cardAccented: {
+    backgroundColor: colors.blush,
+    borderRadius: 16,
+    padding: 16,
+    marginBottom: 12,
+    borderLeftWidth: 3,
+    borderLeftColor: colors.rose,
+    shadowColor: colors.plum,
+    elevation: 6,
+  },
+
+  iconBox: {
+    borderRadius: 11,
+    backgroundColor: colors.dustyRose,
+    alignItems: "center",
+    justifyContent: "center",
+  },
 });
